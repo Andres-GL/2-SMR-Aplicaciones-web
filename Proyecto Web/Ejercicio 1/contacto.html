@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de contacto</title>
+</head>
+<h1>Página de contacto</h1>
+<body>
+    <hr>
+    <a href="index.html">Enlace pagina de contacto</a> <br>
+    <img src="img/davante.jpg" alt="" width="400p" title="Vandelvira"> 
+    <br>
+    <form action="datos.php" method="post">
+        <fieldset>
+            <h3><label for="Nombre">Nombre</label></h3>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Escriba aquí su nombre"> 
+        <h3><label for="Apellido">Apellido</label></h3>
+        <input type="text" id="Apellido" name="Apellido" placeholder="Escriba aquí su apellido">
+        <h3><label for="Edad">Edad</label></h3>
+        <input type="number" id="Edad" name="Edad" placeholder="Indique aquí su edad">
+        <h3><label for="clave">Contraseña</label></h3>
+        <input type="password" id="clave" name="clave" placeholder="Escriba aquí su contraseña">
+        </fieldset>
+        
+        <br><br>
+        <fieldset>
+            <select name="lista">
+            <option value="modulo1"> Sistemas operativos en red </option>
+            <option value="modulo2"> Aplicaciones web </option>
+            <option value="modulo3"> Fundamentos de programación </option>
+
+         </select>
+        </fieldset>       
+<fieldset>
+    <legend>Lista de la compra</legend>
+    <input type="checkbox" id="elemento1" name="elemento1" value="leche">
+    <label for="elemento1"> Caja de leche</label>
+    <input type="checkbox" id="elemento2" name="elemento2" value="Pan" checked="true">
+    <label for="elemento2">Barra de pan</label>
+    <input type="checkbox" id="elemento3" name="elemento3" value="huevos">
+    <label for="elemento3">Docena de huevos</label>
+</fieldset>
+<br>
+<label for="comentario">Comentarios</label><br>
+<textarea id="Comentarios" name="comentario" rows="10"cols="40 "></textarea>
+<br>
+<button type="submit">Enviar</button>
+<button type="reset">Borrar</button>
+</form>
+</body>
+</html>
